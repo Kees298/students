@@ -1,8 +1,58 @@
 package nl.Kees298;
 
+
+import java.util.Objects;
+import java.util.Scanner;
+import java.util.HashMap;
+
 class Students {
 
 	public static void main(String[] args) {
-		System.out.println("Hello world!");
+		Scanner input = new Scanner(System.in);
+		HashMap<String, Integer> person = new HashMap<>();
+		String nameStudent = "";
+		int ageStudent = 0;
+		while (true) {
+			System.out.println("Dit is een programma die de naam  en leeftijd van studenten opslaat.");
+			System.out.println("Type '1' om een nieuwe student toe te voegen.");
+			System.out.println("Type '2' om een student te verwijderen.");
+			System.out.println("Type '3' om de lijst met studenten te tonen.");
+			System.out.print("Wat wil je doen? ");
+			int choice = input.nextInt();
+
+			switch (choice) {
+				case 1:
+					System.out.print("Hoe heet de student die je wilt toevoegen? ");
+					while (Objects.equals(nameStudent, "")) { //
+						nameStudent = input.nextLine();
+					}
+					System.out.println("Naam: " + nameStudent);
+					while (ageStudent == 0) {
+						System.out.print("Hoe oud is de student? ");
+						ageStudent = input.nextInt();
+						System.out.println("Leeftijd: " + ageStudent);
+						person.put(nameStudent, ageStudent);
+					}
+					nameStudent = ""; // reset for further students
+					ageStudent = 0; //reset for further students
+					break;
+
+				case 2:
+					System.out.print("Hoe heet de student die je wilt verwijderen? ");
+					nameStudent = input.nextLine();
+					if (person.containsKey(nameStudent)) { //to prevent error if there's a typo.
+						person.remove(nameStudent);
+					} else
+						System.out.println(nameStudent + " is niet gevonden in het bestand");
+					break;
+				case 3:
+					for (String i : person.keySet()) {
+						System.out.println("Naam: " + i + "\t\t\t Leeftijd: " + person.get(i));
+					}
+					break;
+			}
+		}
 	}
 }
+
+
