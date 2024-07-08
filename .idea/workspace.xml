@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c22156a-b056-4f8f-a28f-ec5b13348ada" name="Changes" comment="Lege class">
+    <list default="true" id="5c22156a-b056-4f8f-a28f-ec5b13348ada" name="Changes" comment="switch 1 en 3 werken, switch 2 niet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/Kees298/Students.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/Kees298/Students.java" afterDir="false" />
     </list>
@@ -39,6 +39,19 @@
       <option name="presentableId" value="Default" />
       <updated>1720164426176</updated>
     </task>
+    <task id="LOCAL-00001" summary="switch 1 en 3 werken, switch 2 niet">
+      <option name="closed" value="true" />
+      <created>1720440851398</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1720440851398</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="switch 1 en 3 werken, switch 2 niet" />
+    <option name="LAST_COMMIT_MESSAGE" value="switch 1 en 3 werken, switch 2 niet" />
   </component>
 </project>
