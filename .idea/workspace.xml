@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c22156a-b056-4f8f-a28f-ec5b13348ada" name="Changes" comment="succesful rollback">
+    <list default="true" id="5c22156a-b056-4f8f-a28f-ec5b13348ada" name="Changes" comment="relocated variables">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/Kees298/Students.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/Kees298/Students.java" afterDir="false" />
     </list>
@@ -45,16 +45,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Students.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Students.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Kees/java_hacklab/Lightning",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "preferences.general"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -88,13 +89,22 @@
       <option name="project" value="LOCAL" />
       <updated>1720521487740</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="relocated variables">
+      <option name="closed" value="true" />
+      <created>1720534447726</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1720534447726</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="switch 1 en 3 werken, switch 2 niet" />
     <MESSAGE value="switch 2 works too&#10;Tabs are still a bit ugly." />
     <MESSAGE value="succesful rollback" />
-    <option name="LAST_COMMIT_MESSAGE" value="succesful rollback" />
+    <MESSAGE value="relocated variables" />
+    <option name="LAST_COMMIT_MESSAGE" value="relocated variables" />
   </component>
 </project>

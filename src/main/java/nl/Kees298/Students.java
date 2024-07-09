@@ -21,9 +21,11 @@ class Students {
 
 			switch (choice) {
 				case 1:
-					//assign name
+					//declare local variables
 					String nameStudent = "";
-					int ageStudent = 0;
+					int ageStudent = -1;
+
+					//assign name
 					System.out.print("Hoe heet de student die je wilt toevoegen? ");
 					while (nameStudent.isEmpty()) { //only run this when no name has been assigned yet.
 						nameStudent = input.nextLine();
@@ -31,7 +33,7 @@ class Students {
 					System.out.println("Naam: " + nameStudent);
 
 					// assign age
-					while (ageStudent == 0) { // only run when no age has been assigned yet
+					while (ageStudent == -1) { // only run when no age has been assigned yet
 						System.out.print("Hoe oud is de student? ");
 						ageStudent = input.nextInt();
 						System.out.println("Leeftijd: " + ageStudent);
@@ -39,7 +41,7 @@ class Students {
 					}
 
 					nameStudent = ""; // reset for further students
-					ageStudent = 0; //reset for further students
+					ageStudent = -1; //reset for further students
 					break;
 
 				case 2:
@@ -62,7 +64,8 @@ class Students {
 					} else {
 						System.out.println(removeStudent + " is niet gevonden in het bestand");
 					}
-					nameStudent = ""; // reset for further students
+
+					removeStudent = ""; // reset for further students
 					break;
 
 				case 3:
