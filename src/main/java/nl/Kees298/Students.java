@@ -24,11 +24,12 @@ class Students {
 			switch (choice) {
 				case 1:
 					System.out.print("Hoe heet de student die je wilt toevoegen? ");
-					while (Objects.equals(nameStudent, "")) { //only run this when no name has been assigned yet.
+					while (Objects.equals(nameStudent,
+							"")) { //only run this when no name has been assigned yet.
 						nameStudent = input.nextLine();
 					}
 					System.out.println("Naam: " + nameStudent);
-					while (ageStudent == 0) {
+					while (ageStudent == 0) { // only run when no age has been assigned yet
 						System.out.print("Hoe oud is de student? ");
 						ageStudent = input.nextInt();
 						System.out.println("Leeftijd: " + ageStudent);
@@ -40,21 +41,25 @@ class Students {
 
 				case 2:
 					System.out.print("Hoe heet de student die je wilt verwijderen? ");
-					while (Objects.equals(nameStudent, ""))
-					nameStudent = input.nextLine();
+					while (Objects.equals(nameStudent,
+							"")) // assign variable nameStudent to input, even if the name is not in the dict.
+					{
+						nameStudent = input.nextLine();
+					}
 					if (person.containsKey(nameStudent)) { //to prevent error if there's a typo.
 						System.out.println(nameStudent + " is verwijderd uit de lijst.");
 						person.remove(nameStudent);
 
-					} else
+					} else {
 						System.out.println(nameStudent + " is niet gevonden in het bestand");
+					}
 					nameStudent = ""; // reset for further students
-					ageStudent = 0; //reset for further students
+
 					break;
 				case 3:
 					System.out.println("Namen \t\t\t Leeftijden"); // heading for the list.
 					for (String i : person.keySet()) {
-						System.out.println( i + "\t\t\t" + person.get(i));
+						System.out.println(i + "\t\t\t" + person.get(i));
 					}
 					break;
 			}
