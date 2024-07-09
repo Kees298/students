@@ -40,11 +40,10 @@ class Students {
 						person.put(nameStudent, ageStudent);
 					}
 
-					nameStudent = ""; // reset for further students
-					ageStudent = -1; //reset for further students
 					break;
 
 				case 2:
+					//declare local variable
 					String removeStudent = "";
 
 					//ask for name
@@ -65,7 +64,6 @@ class Students {
 						System.out.println(removeStudent + " is niet gevonden in het bestand");
 					}
 
-					removeStudent = ""; // reset for further students
 					break;
 
 				case 3:
