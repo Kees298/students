@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c22156a-b056-4f8f-a28f-ec5b13348ada" name="Changes" comment="Comments added.&#10;removed redundant line.&#10;Formatting">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/Kees298/Students.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/Kees298/Students.java" afterDir="false" />
-    </list>
+    <list default="true" id="5c22156a-b056-4f8f-a28f-ec5b13348ada" name="Changes" comment="Comments added.&#10;Added vertical spacing" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,6 +96,7 @@
     <MESSAGE value="switch 1 en 3 werken, switch 2 niet" />
     <MESSAGE value="switch 2 works too&#10;Tabs are still a bit ugly." />
     <MESSAGE value="Comments added.&#10;removed redundant line.&#10;Formatting" />
-    <option name="LAST_COMMIT_MESSAGE" value="Comments added.&#10;removed redundant line.&#10;Formatting" />
+    <MESSAGE value="Comments added.&#10;Added vertical spacing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Comments added.&#10;Added vertical spacing" />
   </component>
 </project>
