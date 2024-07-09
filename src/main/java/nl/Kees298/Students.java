@@ -8,8 +8,6 @@ class Students {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		HashMap<String, Integer> person = new HashMap<>();
-		String nameStudent = "";
-		int ageStudent = 0;
 		while (true) {
 
 			// textblock at start of program.
@@ -24,6 +22,8 @@ class Students {
 			switch (choice) {
 				case 1:
 					//assign name
+					String nameStudent = "";
+					int ageStudent = 0;
 					System.out.print("Hoe heet de student die je wilt toevoegen? ");
 					while (nameStudent.isEmpty()) { //only run this when no name has been assigned yet.
 						nameStudent = input.nextLine();
@@ -43,22 +43,24 @@ class Students {
 					break;
 
 				case 2:
+					String removeStudent = "";
+
 					//ask for name
 					System.out.print("Hoe heet de student die je wilt verwijderen? ");
 
 					// assign variable nameStudent to input, even if the name is not in the dict.
-					while (nameStudent.isEmpty()) {
-						nameStudent = input.nextLine();
+					while (removeStudent.isEmpty()) {
+						removeStudent = input.nextLine();
 					}
 
 					//if name is found
-					if (person.containsKey(nameStudent)) { //to prevent error if there's a typo.
-						System.out.println(nameStudent + " is verwijderd uit de lijst.");
-						person.remove(nameStudent);
+					if (person.containsKey(removeStudent)) { //to prevent error if there's a typo.
+						System.out.println(removeStudent + " is verwijderd uit de lijst.");
+						person.remove(removeStudent);
 
 						// if name is not found
 					} else {
-						System.out.println(nameStudent + " is niet gevonden in het bestand");
+						System.out.println(removeStudent + " is niet gevonden in het bestand");
 					}
 					nameStudent = ""; // reset for further students
 					break;
