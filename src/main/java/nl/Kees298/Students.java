@@ -1,5 +1,7 @@
 package nl.Kees298;
 
+
+import java.util.Objects;
 import java.util.Scanner;
 import java.util.HashMap;
 
@@ -11,8 +13,6 @@ class Students {
 		String nameStudent = "";
 		int ageStudent = 0;
 		while (true) {
-
-			// textblock at start of program.
 			System.out.println();
 			System.out.println("Dit is een programma die de naam  en leeftijd van studenten opslaat.");
 			System.out.println("Type '1' om een nieuwe student toe te voegen.");
@@ -23,53 +23,38 @@ class Students {
 
 			switch (choice) {
 				case 1:
-					//assign name
 					System.out.print("Hoe heet de student die je wilt toevoegen? ");
-					while (nameStudent.isEmpty()) { //only run this when no name has been assigned yet.
+					while (Objects.equals(nameStudent, "")) { //only run this when no name has been assigned yet.
 						nameStudent = input.nextLine();
 					}
 					System.out.println("Naam: " + nameStudent);
-
-					// assign age
-					while (ageStudent == 0) { // only run when no age has been assigned yet
+					while (ageStudent == 0) {
 						System.out.print("Hoe oud is de student? ");
 						ageStudent = input.nextInt();
 						System.out.println("Leeftijd: " + ageStudent);
 						person.put(nameStudent, ageStudent);
 					}
-
 					nameStudent = ""; // reset for further students
 					ageStudent = 0; //reset for further students
 					break;
 
 				case 2:
-					//ask for name
 					System.out.print("Hoe heet de student die je wilt verwijderen? ");
-
-					// assign variable nameStudent to input, even if the name is not in the dict.
-					while (nameStudent.isEmpty()) {
-						nameStudent = input.nextLine();
-					}
-
-					//if name is found
+					while (Objects.equals(nameStudent, ""))
+					nameStudent = input.nextLine();
 					if (person.containsKey(nameStudent)) { //to prevent error if there's a typo.
 						System.out.println(nameStudent + " is verwijderd uit de lijst.");
 						person.remove(nameStudent);
 
-						// if name is not found
-					} else {
+					} else
 						System.out.println(nameStudent + " is niet gevonden in het bestand");
-					}
 					nameStudent = ""; // reset for further students
+					ageStudent = 0; //reset for further students
 					break;
-
 				case 3:
-					// heading for the list.
-					System.out.println("Namen \t\t\t Leeftijden");
-
-					//loop through dict, print keys + values.
+					System.out.println("Namen \t\t\t Leeftijden"); // heading for the list.
 					for (String i : person.keySet()) {
-						System.out.println(i + "\t\t\t" + person.get(i));
+						System.out.println( i + "\t\t\t" + person.get(i));
 					}
 					break;
 			}
