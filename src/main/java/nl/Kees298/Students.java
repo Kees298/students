@@ -22,23 +22,21 @@ class Students {
 			switch (choice) {
 				case 1:
 					//declare local variables
-					String nameStudent = "";
-					int ageStudent = -1;
+					String nameStudent;
+					int ageStudent;
 
 					//assign name
 					System.out.print("Hoe heet de student die je wilt toevoegen? ");
-					while (nameStudent.isEmpty()) { //only run this when no name has been assigned yet.
-						nameStudent = input.nextLine();
-					}
+					nameStudent = input.next();
+
 					System.out.println("Naam: " + nameStudent);
 
 					// assign age
-					while (ageStudent == -1) { // only run when no age has been assigned yet
-						System.out.print("Hoe oud is de student? ");
-						ageStudent = input.nextInt();
-						System.out.println("Leeftijd: " + ageStudent);
-						person.put(nameStudent, ageStudent);
-					}
+
+					System.out.print("Hoe oud is de student? ");
+					ageStudent = input.nextInt();
+					System.out.println("Leeftijd: " + ageStudent);
+					person.put(nameStudent, ageStudent);
 
 					break;
 
@@ -50,9 +48,7 @@ class Students {
 					System.out.print("Hoe heet de student die je wilt verwijderen? ");
 
 					// assign variable nameStudent to input, even if the name is not in the dict.
-					while (removeStudent.isEmpty()) {
-						removeStudent = input.nextLine();
-					}
+					removeStudent = input.next();
 
 					//if name is found
 					if (person.containsKey(removeStudent)) { //to prevent error if there's a typo.
